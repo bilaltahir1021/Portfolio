@@ -11,7 +11,7 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="www.linkedin.com/in/muhammad-bilal-48a99135a"
+                href="https://www.linkedin.com/in/muhammad-bilal-48a99135a"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"

@@ -6,11 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          I am currently co-founder of CallHQ.ai, building real-time voice AI for
-          businesses. I am a technologist at heart with strong business judgment—
-          I enjoy going from product strategy to hands-on engineering. My background
-          spans leadership at Adobe, founding Broki and CallHQ, and shipping
-          full-stack products end to end.
+        I'm Bilal, a CS student and developer focused on building intelligent, scalable systems. My toolkit ranges from the high-performance world of C++ and SQL to modern AI workflows using FastAPI and Machine Learning. I thrive on the challenge of turning complex logic into seamless user experiences. When I'm not in my IDE, you can probably find me analyzing sleep consistency patterns or catching a UCL match.
         </p>
       </div>
     </div>

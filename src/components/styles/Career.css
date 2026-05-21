@@ -41,21 +41,40 @@
 .career-info-box {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
   margin-bottom: 50px;
 }
 
 .career-info-box p {
-  width: 40%;
+  width: calc(50% - 20px);
   font-size: 18px;
   font-weight: 300;
   margin: 0;
+  line-height: 1.5;
 }
 
 .career-info-in {
   display: flex;
-  width: 40%;
-  justify-content: space-between;
-  gap: 50px;
+  width: calc(50% - 20px);
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.career-icon-wrap {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.career-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .career-info h3 {

@@ -2,7 +2,6 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -70,7 +69,7 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="www.linkedin.com/in/muhammad-bilal-48a99135a"
+            href="https://www.linkedin.com/in/muhammad-bilal-48a99135a"
             target="_blank"
             rel="noreferrer"
           >

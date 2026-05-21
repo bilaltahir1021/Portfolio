@@ -12,21 +12,69 @@ import {
 } from "@react-three/rapier";
 
 const textureLoader = new THREE.TextureLoader();
+
+const configureTexture = (texture: THREE.Texture) => {
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.wrapS = THREE.ClampToEdgeWrapping;
+  texture.wrapT = THREE.ClampToEdgeWrapping;
+  texture.minFilter = THREE.LinearMipmapLinearFilter;
+  texture.magFilter = THREE.LinearFilter;
+  texture.needsUpdate = true;
+};
+
+const makeSquareIconCanvas = (image: TexImageSource) => {
+  const source = image as { width: number; height: number };
+  const size = 1024;
+  const canvas = document.createElement("canvas");
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext("2d");
+
+  if (!ctx || !source.width || !source.height) return image;
+
+  const padding = size * 0.14;
+  const maxDraw = size - padding * 2;
+  const scale = Math.min(maxDraw / source.width, maxDraw / source.height);
+  const drawWidth = source.width * scale;
+  const drawHeight = source.height * scale;
+  const x = (size - drawWidth) / 2;
+  const y = (size - drawHeight) / 2;
+
+  // Match JS/Next-style balls: solid white base with centered logo.
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, size, size);
+  ctx.drawImage(image as CanvasImageSource, x, y, drawWidth, drawHeight);
+
+  return canvas;
+};
+
+const loadIconTexture = (url: string) => {
+  const texture = textureLoader.load(url, (loaded) => {
+    loaded.image = makeSquareIconCanvas(loaded.image);
+    configureTexture(loaded);
+  });
+
+  configureTexture(texture);
+  return texture;
+};
+
 const imageUrls = [
   "/images/react2.webp",
+  "/images/python.webp",
+  "/images/python.webp",
   "/images/python.webp",
   "/images/next2.webp",
   "/images/node2.webp",
   "/images/javascript.webp",
   "/images/cpp.webp",
-  "/images/numpy.png",
-  "/images/pandas.png",
+  "/images/express.webp",
   "/images/pytorch.webp",
   "/images/mysql.webp",
+  "/images/mongo.webp",
   "/images/supabase.webp",
 
 ];
-const textures = imageUrls.map((url) => textureLoader.load(url));
+const textures = imageUrls.map((url) => loadIconTexture(url));
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 

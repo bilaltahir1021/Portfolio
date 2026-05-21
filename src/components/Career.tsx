@@ -1,9 +1,9 @@
 import "./styles/Career.css";
 
 const python = "/images/python.webp";
-const fastapi = "/images/fastapi.webp";
+const fastapi = "/images/supabase.webp";
 const cpp = "/images/cpp.webp";
-const linux = "/images/kali-linux.webp";
+const linux = "/images/mongo.webp";
 
 const experiences = [
   {
@@ -55,3 +55,41 @@ const experiences = [
     ],
   },
 ];
+
+const Career = () => {
+  return (
+    <section className="career-section" id="career">
+      <h2>
+        Career <span>Journey</span>
+      </h2>
+
+      <div className="career-info">
+        <div className="career-timeline">
+          <div className="career-dot" />
+        </div>
+
+        {experiences.map((experience) => (
+          <div className="career-info-box" key={`${experience.title}-${experience.date}`}>
+            <div className="career-info-in">
+              <div className="career-icon-wrap" style={{ background: experience.iconBg }}>
+                <img
+                  src={experience.icon}
+                  alt={experience.company_name}
+                  className="career-icon"
+                />
+              </div>
+              <div>
+                <h4>{experience.title}</h4>
+                <h5>{experience.company_name}</h5>
+                <h3>{experience.date}</h3>
+              </div>
+            </div>
+            <p>{experience.points[0]}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Career;

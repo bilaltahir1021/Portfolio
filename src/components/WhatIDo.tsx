@@ -87,20 +87,19 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>MACHINE LEARNING &amp; CV</h3>
+              <h4>PyTorch Models for Vision Tasks</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                I train and optimize PyTorch CNN pipelines for practical computer
+                vision use cases.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">PyTorch</div>
+                <div className="what-tags">CNNs</div>
+                <div className="what-tags">Computer vision</div>
+                <div className="what-tags">Data preprocessing</div>
+                <div className="what-tags">Model evaluation</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,21 +123,57 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>FULL-STACK &amp; SAAS</h3>
+              <h4>FastAPI + CRM MVP Development</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                I build full-stack SaaS systems with FastAPI and APIs powering my
+                CRM MVP project.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
+                <div className="what-tags">FastAPI</div>
                 <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
+                <div className="what-tags">CRM MVP</div>
+                <div className="what-tags">REST APIs</div>
                 <div className="what-tags">PostgreSQL</div>
                 <div className="what-tags">MongoDB</div>
                 <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+              </div>
+              <div className="what-arrow"></div>
+            </div>
+          </div>
+          <div
+            className="what-content what-noTouch"
+            ref={(el) => setRef(el, 2)}
+          >
+            <div className="what-border1">
+              <svg height="100%">
+                <line
+                  x1="0"
+                  y1="100%"
+                  x2="100%"
+                  y2="100%"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="6,6"
+                />
+              </svg>
+            </div>
+            <div className="what-corner"></div>
+            <div className="what-content-in">
+              <h3>LOW-LEVEL DEVELOPMENT</h3>
+              <h4>C++ Sleep Tracker and Core Logic</h4>
+              <p>
+                I build low-level systems in C++, including a persistent sleep
+                tracker with recursive analysis and file-based data handling.
+              </p>
+              <h5>Skillset & tools</h5>
+              <div className="what-content-flex">
+                <div className="what-tags">C++</div>
+                <div className="what-tags">Pointers &amp; memory</div>
+                <div className="what-tags">Recursive logic</div>
+                <div className="what-tags">File I/O</div>
+                <div className="what-tags">Data structures</div>
               </div>
               <div className="what-arrow"></div>
             </div>
