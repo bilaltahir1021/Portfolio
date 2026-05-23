@@ -8,7 +8,7 @@ const projects = [
     title: "Micro-CRM MVP",
     category: "Full-Stack Application",
     tools: "Next.js, Supabase, PostgreSQL, Tailwind CSS",
-    image: "/images/crm-placeholder.png", 
+    image: "/images/microcrm-landing.png", 
     link: "https://github.com/bilaltahir1021/micro-crm",
   },
   {
