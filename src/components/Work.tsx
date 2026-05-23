@@ -5,11 +5,11 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "Micro-CRM MVP",
+    category: "Full-Stack Application",
+    tools: "Next.js, Supabase, PostgreSQL, Tailwind CSS",
+    image: "/images/crm-placeholder.png", 
+    link: "https://github.com/bilaltahir1021/micro-crm",
   },
   {
     title: "Whatsapp Automation",
