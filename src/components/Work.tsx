@@ -16,16 +16,23 @@ const projects = [
   title: "Sleep Consistency Tracker",
   category: "Software Utility & Analytics",
   tools: "C++, File I/O, Data Analytics",
-  image: "/images/sleep-tracker.png", 
-  link: "https://github.com/bilaltahir1021/sleep-tracker", // Swap with your actual repo link if uploaded!
+  image: "/images/sleeptracker.png", 
+  link: "https://github.com/bilaltahir1021/SleepTracker", 
 },
 // Project 03 - YOLO Object Detection
 {
   title: "YOLO Object Detection Engine",
   category: "Computer Vision / AI",
   tools: "Python, YOLO, Computer Vision, Machine Learning",
-  image: "/images/yolo-project.png",
-  link: "https://github.com/bilaltahir1021/yolo-detection", // Swap with your actual repo link if uploaded!
+  image: "/images/yolo.png",
+  link: "https://github.com/bilaltahir1021/YOLO", 
+},
+{
+  title: "Real-Time Chat Application",
+  category: "Full-Stack Web Sockets",
+  tools: "React, Node.js, Express, Socket.io",
+  image: "/images/chatapp.png", 
+  link: "https://github.com/bilaltahir1021/Chatapp",
 },
 ];
 
