@@ -11,27 +11,22 @@ const projects = [
     image: "/images/microcrm-landing.png", 
     link: "https://github.com/bilaltahir1021/micro-crm",
   },
-  {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
-  },
-  {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
-  },
+ // Project 02 - Sleep Tracker
+ {
+  title: "Sleep Consistency Tracker",
+  category: "Software Utility & Analytics",
+  tools: "C++, File I/O, Data Analytics",
+  image: "/images/sleep-tracker.png", 
+  link: "https://github.com/bilaltahir1021/sleep-tracker", // Swap with your actual repo link if uploaded!
+},
+// Project 03 - YOLO Object Detection
+{
+  title: "YOLO Object Detection Engine",
+  category: "Computer Vision / AI",
+  tools: "Python, YOLO, Computer Vision, Machine Learning",
+  image: "/images/yolo-project.png",
+  link: "https://github.com/bilaltahir1021/yolo-detection", // Swap with your actual repo link if uploaded!
+},
 ];
 
 const Work = () => {
